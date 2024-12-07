@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section" style="background-image: url('static/img/p6.jpeg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Crime Data Dashboard</h1>
+        <p class="hero-subtitle">Uncover the truth behind crime statistics in India and join the movement for change.</p>
+        <a href="/about" class="hero-btn">Explore Data</a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="content-section">
+    <h1 class="section-title">Understanding Crime Against Women</h1>
+    <p class="section-description">Explore critical insights and actionable data to empower communities and create safer environments for women.</p>
+    <div class="content-grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="static/img/p2.jpeg" alt="Crime Statistics" class="card-img">
+            <div class="card-body">
+                <h3 class="card-title">Rising Crime Rates</h3>
+                <p>In 2022, crime against women rose to 66.4 per 100,000 women. States like Uttar Pradesh and Maharashtra reported the highest cases, urging the need for collective action.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="static/img/p5.jpeg" alt="Online Reporting" class="card-img">
+            <div class="card-body">
+                <h3 class="card-title">Accessible Reporting</h3>
+                <p>Our online tools overcome barriers like fear of judgment, making crime reporting accessible to women, even in remote areas.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="static/img/p4.jpeg" alt="Empowerment" class="card-img">
+            <div class="card-body">
+                <h3 class="card-title">Empowering Women</h3>
+                <p>A secure platform for real-time reporting fosters transparency in law enforcement and empowers victims to take charge.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Styling -->
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #101010;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-section .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        color: #ffbe0b;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        animation: fadeInDown 1.5s ease;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        color: #f0f0f0;
+        margin-bottom: 30px;
+        animation: fadeInUp 1.5s ease;
+    }
+
+    .hero-btn {
+        background: linear-gradient(to right, #e74c3c, #f39c12);
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+        animation: fadeIn 2s ease;
+    }
+
+    .hero-btn:hover {
+        transform: translateY(-5px);
+        background: linear-gradient(to right, #d63031, #e67e22);
+    }
+
+    /* Content Section */
+    .content-section {
+        padding: 80px 20px;
+        text-align: center;
+        background: #151515;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        color: #ffbe0b;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease;
+    }
+
+    .section-description {
+        font-size: 1.2rem;
+        color: #bbb;
+        margin-bottom: 40px;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        background: #222;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        color: #ffbe0b;
+        margin-bottom: 10px;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+        color: #ddd;
+        line-height: 1.6;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}

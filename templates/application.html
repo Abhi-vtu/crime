@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Background Section -->
+<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://api.deepai.org/job-view-file/bda1f6db-314a-4bd7-9ff2-98ae6e28b20c/outputs/output.jpg?art-image=true'); background-size: cover; background-position: center; min-height: 100vh; padding: 20px; font-family: 'Poppins', sans-serif; color: #fff;">
+
+    <!-- Header Section -->
+    <header style="text-align: center; padding: 30px;">
+        <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 10px;">Recent Rape Cases in India</h1>
+        <p style="font-size: 1.2rem; color: #bbb;">Stay informed with verified information</p>
+    </header>
+
+    <!-- News Section -->
+    <div class="news-container" style="width: 85%; margin: 40px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+        <!-- News Item 2 -->
+        <a href="https://timesofindia.indiatimes.com/city/delhi/300-rapes-and-500-molestation-cases-reported-in-just-2-months/articleshow/46488674.cms"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="text-decoration: none;">
+            <div class="news-item hover-effect" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="font-size: 1.5rem; color: #fff; font-weight: bold; margin-bottom: 10px;">300 rape, 500 molestation cases in Delhi in Jan-Feb</h3>
+                <p class="date" style="color: #ccc; margin-bottom: 15px;">December 3, 2024</p>
+                <p style="color: #ddd;">Two-thirds of the 300 cases have been solved. Police data reveals that 96% of rapes were committed by people known to the victim or her family members.</p>
+            </div>
+        </a>
+
+        <!-- News Item 3 -->
+        <a href="https://www.livelaw.in/top-stories/domestic-violence-act-meant-for-quick-remedy-yet-cases-drag-on-like-other-family-court-matters-supreme-court-274188"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="text-decoration: none;">
+            <div class="news-item hover-effect" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="font-size: 1.5rem; color: #fff; font-weight: bold; margin-bottom: 10px;">Domestic violence cases dragging on: Top court</h3>
+                <p class="date" style="color: #ccc; margin-bottom: 15px;">November 4, 2024</p>
+                <p style="color: #ddd;">The Supreme Court raised concerns over the slow pace of cases filed under the Domestic Violence Act and the lack of a support system for women after two years.</p>
+            </div>
+        </a>
+
+        <!-- News Item 4 -->
+        <a href="https://www.newindianexpress.com/states/kerala/2024/Sep/25/surge-in-crimes-against-women-118-lakh-cases-reported-since-2017-in-kerala"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="text-decoration: none;">
+            <div class="news-item hover-effect" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="font-size: 1.5rem; color: #fff; font-weight: bold; margin-bottom: 10px;">Surge in crimes against women: Kerala reports 1.18 lakh cases</h3>
+                <p class="date" style="color: #ccc; margin-bottom: 15px;">September 25, 2024</p>
+                <p style="color: #ddd;">Kerala has reported an 82% crime rate against women, significantly higher than the national average of 66.4%, according to NCRB data.</p>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- Self-Defense Videos Section -->
+    <div style="padding: 40px 20px; text-align: center;">
+        <h2 style="font-size: 2.5rem; color: #fff; margin-bottom: 20px;">Self-Defense Videos</h2>
+        <p style="color: #bbb; font-size: 1rem; margin-bottom: 30px;">Learn basic self-defense techniques to protect yourself and stay safe.</p>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+            <!-- Video 1 -->
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/T7aNSRoDCmg" allowfullscreen style="border-radius: 10px;"></iframe>
+            <!-- Video 2 -->
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/k9Jn0eP-ZVg" allowfullscreen style="border-radius: 10px;"></iframe>
+            <!-- Video 3 -->
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/KVpxP3ZZtAc" allowfullscreen style="border-radius: 10px;"></iframe>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" style="position: fixed; bottom: 20px; right: 20px; background: #007BFF; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+        ↑
+    </button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <script>
+        // Add hover effect to news items
+        document.querySelectorAll('.news-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.05)';
+                item.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.5)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+                item.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.3)';
+            });
+        });
+
+        // Add hover effect to back-to-top button
+        const backToTop = document.querySelector('button[onclick="scrollToTop()"]');
+        backToTop.addEventListener('mouseover', () => {
+            backToTop.style.backgroundColor = '#0056b3';
+            backToTop.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+        });
+        backToTop.addEventListener('mouseout', () => {
+            backToTop.style.backgroundColor = '#007BFF';
+            backToTop.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        });
+    </script>
+</div>
+{% endblock %}
